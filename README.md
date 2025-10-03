@@ -33,8 +33,8 @@ pip install -r requirements.txt
 ## ▶️ How to Use
 1. Run the script:
      python Move-Duplicate-Images.py
-2. A GUI will pop up to let you select the folder containing images.
-3. The tool will begin scanning, display a progress bar, and delete any duplicates it finds.
+2. A GUI will pop up to let you select the folder containing images & where to store the duplicate files.
+3. The tool will begin scanning, display a progress bar, and move any duplicates to the bin.
 4. Once done, a message box will show the result, and a log file deleted_images_log.txt will be created in the selected folder.
 
 ## 📝 Log File
@@ -43,4 +43,4 @@ Each run appends to deleted_images_log.txt in the selected folder, containing:
 - List of moved image paths
 
 ## 👨‍💻 Author
-This is fork of [SmartImageSweeper](https://github.com/codersattu/SmartImageSweeper)
+This is a fork of [SmartImageSweeper](https://github.com/codersattu/SmartImageSweeper)
