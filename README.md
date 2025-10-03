@@ -5,10 +5,9 @@ This is a Python-based tool that allows users to remove duplicate images from a 
 ---
 
 ## 🚀 Features
-
 - ✅ Select a folder using the GUI
-- ✅ Detect and delete duplicate images using image content hashing
-- ✅ Real-time progress bar for processing status
+- ✅ Detect and move duplicate images using image content hashing
+- 🟨 Real-time progress bar for processing status
 - ✅ Automatically logs deleted file paths with timestamps
 - ✅ Safe, lightweight, and open source
 
@@ -21,20 +20,19 @@ This is a Python-based tool that allows users to remove duplicate images from a 
 - `.png`
 - `.bmp`
 - `.gif`
+- `.heic`
 
 ---
 
 ## 🛠 Installation
-
-Make sure Python is installed. Then install the required library:
+Make sure Python is installed. Then install the requirments:
 
 ```bash
-pip install pillow
-
+pip install -r requirements.txt
 ````
 ## ▶️ How to Use
 1. Run the script:
-     python duplicate_image_remover.py
+     python Move-Duplicate-Images.py
 2. A GUI will pop up to let you select the folder containing images.
 3. The tool will begin scanning, display a progress bar, and delete any duplicates it finds.
 4. Once done, a message box will show the result, and a log file deleted_images_log.txt will be created in the selected folder.
@@ -42,9 +40,7 @@ pip install pillow
 ## 📝 Log File
 Each run appends to deleted_images_log.txt in the selected folder, containing:
 - Timestamp of the run
-- List of deleted image paths
+- List of moved image paths
 
 ## 👨‍💻 Author
-Developed by Abhishek Satpathy [www.abhisat.com]
-
-For feedback or contributions, feel free to open an issue or submit a pull request.
+This is fork of [SmartImageSweeper](https://github.com/codersattu/SmartImageSweeper)
